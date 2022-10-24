@@ -1,0 +1,20 @@
+server:
+  port: 8081
+#  spring.datasource.url=jdbc:postgresql://localhost:5432/persons
+#  spring.datasource.username=postgres
+#  spring.datasource.password=postgres
+#  spring.datasource.driver-class-name=org.postgresql.Driver
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/persons
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  activemq:
+    broker-url: tcp://localhost:61616
+    username: admin
+    password: admin
+    packages:
+      trust-all: true
+    queues: persons

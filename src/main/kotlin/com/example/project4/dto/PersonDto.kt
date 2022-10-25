@@ -4,11 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import java.io.Serializable
 
 
-class PersonDto (
+class PersonDto(
     @JsonProperty("name")
     val name: String,
     @JsonProperty("last-name")
     val lastName: String
-): Serializable
+) : Serializable
 
 
